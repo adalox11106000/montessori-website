@@ -1,0 +1,341 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+}
+
+/* Desktop Home Page */
+.containerdiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  min-height: 100vh;
+}
+
+.nav, .footer {
+  grid-column: 1/4;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.left {
+  grid-column: 1/3;
+}
+
+nav div{
+  background-color: rgb(23, 103, 179);  /*498AC7*/
+  padding: 30px;
+}
+
+nav ul {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+
+nav li {
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+  text-decoration-color: crimson;
+}
+
+main {
+  display: flex;
+}
+
+.stars {
+  position: relative;
+  height: 300px;
+}
+
+#littlestarsheader {
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 70px;
+}
+
+h1 {
+  font-size: 70px;
+  color: rgb(231, 231, 99);
+  line-height: 120px;
+  margin-left: 30px;
+  font-family:'Alice', serif;;
+}
+
+.star1 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0px;
+  left: 650px;
+}
+
+.star2 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 280px;
+  left: 400px
+}
+
+.star3 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 420px;
+  left: 100px;
+}
+
+.hands {
+  position: absolute;
+  top: 40%;
+ left: 30%;
+}
+
+.postitcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 120px;
+  margin-top: 290px;
+  gap: 20px;
+  color: white;
+  justify-items: end;
+  font-size: 25px;
+}
+
+.postit1 {
+  background-color: #F353E3;
+  padding: 20px;
+  text-align: left;
+  height: 320px;
+  width: 410px;
+  margin-left: 155px;
+}
+
+.postit2 {
+  background-color: #B6E3F6;
+  padding: 20px;
+  text-align: left;
+  color: black;
+  height: 320px;
+  width: 410px;
+}
+
+.postit3 {
+  background-color: #FC8755;
+  padding: 20px;
+  text-align: left;
+  height: 320px;
+  width: 410px;
+}
+
+#postit1par {
+  margin-top: 15px;
+}
+
+#postit2par {
+  margin-top: 15px;
+}
+
+#postit3par {
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.aboutleft {
+  background-color: #FC8755;
+  height: 800px;
+  padding: 50px;
+  margin: 20px;
+  margin-top: 50px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 35px;
+  color: white;
+  align-self: center;
+  display: grid;
+  grid-column: 1/3;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+h2 {
+  line-height: 80px;
+}
+
+.aboutleft p {
+  line-height: 40px;   /* within paragraph */
+  margin-bottom: 30px; /* between paragraphs */
+}
+
+.right {
+  display: grid;
+  align-items: end;
+  margin-bottom: 5px;
+  margin-top: 170px;
+}
+
+.envpdiv {
+  height: 150px;
+  width: 350px;
+}
+
+#envp {
+  margin-top: 10px;
+}
+
+.childwithspeaker {
+  padding: 100px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tusla {
+  padding-left: 60px;
+} 
+
+.ecce {
+  margin-top: 20px;
+}
+
+  /* Desktop About Us page */
+  .aboutcontainerdiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .aboutnav, .aboutfooter {
+    grid-column: 1/5;
+  }
+
+  .aboutnav{
+    background-color: rgb(23, 103, 179);  /*498AC7*/
+  }
+  
+  .aboutnav nav ul {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    list-style-type: none;
+  }
+  
+  .aboutnav nav li {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .aboutnav nav li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .aboutnav nav li a:hover {
+    text-decoration: underline;
+    text-decoration-color: crimson;
+  }
+  
+  .aboutright {
+    grid-column: 3/5;
+    display: grid;
+    align-content: flex-end;
+    margin-top: 50px;
+  }
+
+  .room {
+    margin-top: 55px;
+    margin-bottom: 20px;
+    width: 600px;
+    height: 450px;
+  }
+
+  .child {
+    width: 600px;
+    height: 300px;
+    margin-bottom: 150px;
+    margin-top: 15px;
+  }
+
+  .abouttusla {
+    padding-left: 60px;
+  } 
+  
+  .aboutecce {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .aboutfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;
+  }
+
+/* Tablet - ipad mini */
+@media only screen and (max-width: 768px) {
+  .right, .stars, .hands, .aboutright {
+    display: none;
+  }
+
+  nav ul {
+    width: auto;
+  }
+  nav li {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .left .postitcontainer {
+    margin-top: auto;
+    display: inline;
+  }
+
+  .postit2, .postit3 {
+    margin-left: 155px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  .aboutleft {
+    grid-column: 1/5;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: auto;
+  }
+} 
